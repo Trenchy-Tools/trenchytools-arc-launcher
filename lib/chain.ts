@@ -72,7 +72,7 @@ export type ChainConfig = {
   maxBundle: number
   /** the tip that carries a same-block bundle ("Jito tip"), or null when the chain has none */
   tipName: string | null
-  /** one line on how bundle buyers land, for the "?" of Bundle buyers (limits, lookup tables, …) */
+  /** one line on how the first buyers land, for the "?" of First buyers */
   bundleHelp: string
   /** a vanity address suffix the launchpad uses ("pump"), or null */
   vanitySuffix: string | null
@@ -164,7 +164,7 @@ export const chain: ChainConfig = {
   minGas: 0.05,
   maxBundle: 16,
   tipName: null,
-  bundleHelp: "Arc has no Jito and sub-second blocks: the bundle buys all go out the moment the create confirms.",
+  bundleHelp: "Arc has no Jito and sub-second blocks: the first buys all go out the moment the create confirms.",
   vanitySuffix: null,
   evm: { api: "/api/arc", chainId: 5042, ws: false, createVenue: "tolly", exemptList: false, minBuy: 0.5, totalSupply: 1_000_000_000, transferChain: "arc" },
   launchpads: [
