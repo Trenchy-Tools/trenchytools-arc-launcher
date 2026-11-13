@@ -174,7 +174,7 @@ export const chain: ChainConfig = {
         { field: "buyTaxBps", label: "Buy tax", kind: "number", default: "1", unit: "%", min: 0, max: 20, scale: 100, help: "0–20 %, yours" },
         { field: "sellTaxBps", label: "Sell tax", kind: "number", default: "1", unit: "%", min: 0, max: 20, scale: 100, help: "0–20 %, yours" },
       ] },
-    { id: "pools-trade", name: "pools.trade", logo: "/logos/launchpads/pools-trade.png", site: "https://pools.trade", note: "a hookless Uniswap v4 pool against native USDC (0.25 % fee) from the launch block", body: { venue: "pools-trade" }, creatorFees: false },
+    { id: "pools-trade", name: "pools.trade", logo: "/logos/launchpads/pools-trade.png", site: "https://pools.trade", note: "a hookless Uniswap v4 pool against native USDC (0.25 % fee) from the launch block", body: { venue: "pools-trade" } },
   ],
   features: { tokenAccounts: false, creatorFees: true, mayhem: false, sameBlock: false, pairs: false, holderRewards: false },
 }
